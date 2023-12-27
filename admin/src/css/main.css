@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+@import "./reset.css" layer(reset);
+@import "./externals.css" layer(externals);
+@import "./variables.css" layer(variables);
+@import "./utilities.css" layer(utilities);
+@import "./theme.css" layer(theme);
+
+@layer reset, externals, variables, utilities, theme;

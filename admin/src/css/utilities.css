@@ -1,0 +1,10 @@
+.error-message {
+  font-size: 0.7em;
+  color: orangered;
+}
+.button-plus:after {
+  content: "＋";
+}
+.button-minus:after {
+  content: "－";
+}

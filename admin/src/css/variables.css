@@ -1,0 +1,26 @@
+:root {
+  --pure-white: rgb(255, 255, 255);
+  --pale-gray: rgb(205, 205, 205);
+  --light-gray: rgb(224, 224, 224);
+  --dark-gray: rgb(160, 160, 160);
+  --sumi-black: rgb(33, 40, 40);
+  --light-blue1: rgb(137, 176, 253);
+  --light-blue2: rgb(79, 136, 250);
+  --dark-blue1: rgb(48, 65, 86);
+  --dark-blue2: rgb(18, 36, 56);
+  --light-green1: rgb(123, 250, 184);
+  --light-green2: rgb(78, 225, 149);
+  --dark-green1: rgb(109, 196, 151);
+  --dark-green2: rgb(46, 175, 108);
+  --light-yellow1: rgb(255, 236, 127);
+  --light-yellow2: rgb(255, 224, 49);
+  --light-red1: rgb(255, 127, 140);
+  --light-red2: rgb(229, 90, 104);
+
+  /** Palette 1 */
+  --royal-blue-traditional: rgba(39, 42, 105, 1);
+  --denim: rgba(56, 93, 172, 1);
+  --magnolia: rgb(232, 230, 255);
+  --pale-azure: rgb(132, 216, 255);
+  --cyclamen: rgb(252, 112, 156);
+}

@@ -1,0 +1,11 @@
+[build]
+functions = "src"
+functionsSource = "src"
+
+[context.dev.environment]
+  AWS_LAMBDA_JS_RUNTIME = "nodejs18.x"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"

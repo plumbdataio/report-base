@@ -1,0 +1,53 @@
+{
+  "name": "report-base-admin",
+  "version": "0.0.3",
+  "description": "",
+  "dependencies": {
+    "@fullcalendar/core": "^5.10.1",
+    "@fullcalendar/interaction": "^5.10.1",
+    "@fullcalendar/resource-timeline": "^5.10.1",
+    "@fullcalendar/vue": "^5.10.1",
+    "axios": "^1.6.3",
+    "bootstrap": "^4.6.0",
+    "chart.js": "^4.2.1",
+    "chartjs-plugin-datalabels": "^2.2.0",
+    "dayjs": "^1.11.10",
+    "es6-promise": "^4.2.8",
+    "file-saver": "^2.0.5",
+    "firebase": "^10.7.1",
+    "firebaseui": "^6.1.0",
+    "japanese-holidays": "^1.0.10",
+    "lodash": "^4.17.21",
+    "v-click-outside": "^3.1.2",
+    "vue": "^2.7.16",
+    "vue-mq": "^1.0.1",
+    "vue-qr": "^4.0.9",
+    "vue-router": "^3.5.2",
+    "vuelidate": "^0.7.6",
+    "vuex": "^3.6.2",
+    "vuex-persistedstate": "^4.0.0-beta.3",
+    "xlsx-populate": "^1.21.0"
+  },
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build --mode development",
+    "build:prod": "vite build --mode production",
+    "deploy": "npm version patch && npm run build && firebase deploy && git push",
+    "deploy:prod": "npm version patch && npm run deploy:prod:nobump",
+    "deploy:prod:nobump": "npm run build:prod && firebase deploy && git push",
+    "browse": "firebase emulators:start",
+    "backup": "firebase database:get / -o ./backup.json --pretty",
+    "restore": "firebase database:set / ./backup.json",
+    "wp:dev": "rimraf ./dist && webpack serve --mode development",
+    "wp:build:prod": "rimraf ./dist.prod && webpack --mode production",
+    "wp:build": "webpack --mode development",
+    "wp:deploy:prod": "npm version patch && npm run wp:build:prod && firebase deploy && git push",
+    "wp:deploy": "npm run build:prod && firebase hosting:channel:deploy dev"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "Firefox ESR",
+    "Opera 12.1"
+  ]
+}
