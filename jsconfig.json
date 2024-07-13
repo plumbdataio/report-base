@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es6",
+    "target": "esnext",
     "checkJs": true,
     "paths": {
-      "@/*": [ "./admin/src/*" ]
+      "@/*": [ "./app/src/*" ]
     }
   },
   "include": ["./**/src/**/*"]

@@ -15,16 +15,18 @@
     "url": "https://github.com/plumbdataio/report-base/issues"
   },
   "workspaces": [
-    "admin",
-    "client",
-    "functions",
-    "gas"
+    "app",
+    "functions"
   ],
   "scripts": {
-    "start": "concurrently --kill-others \"npm run dev -w admin\" \"npm run dev -w client\""
+    "start": "concurrently --kill-others --names 'app,functions' \"npm run dev -w app\" \"sleep 2 && npm run serve:dev -w functions\"",
+    "start:prod": "concurrently --kill-others --names 'app,functions' \"npm run dev:prod -w app\" \"sleep 2 && npm run serve:prod -w functions\""
   },
   "devDependencies": {
-    "@vitejs/plugin-vue2": "^1.1.2",
+    "@playwright/test": "^1.45.1",
+    "@types/lodash": "^4.17.4",
+    "@types/vuelidate": "^0.7.21",
+    "@vitejs/plugin-vue2": "^2.3.1",
     "concurrently": "^8.2.2",
     "cssnano": "^6.0.3",
     "postcss-cssnext": "^3.1.0",
@@ -34,9 +36,15 @@
     "postcss-url": "^10.1.3",
     "rimraf": "^5.0.5",
     "rollup-plugin-visualizer": "^5.12.0",
-    "vite": "^5.0.11"
+    "vite": "^5.2.12"
   },
   "dependencies": {
-    "bootstrap-vue": "^2.23.1"
+    "@sentry/vue": "^8.9.2",
+    "await-to-js": "^3.0.0",
+    "bootstrap-vue": "^2.21.2",
+    "firebase": "^10.12.2",
+    "http-status-codes": "^2.3.0",
+    "volar-service-vetur": "^0.0.47",
+    "vue": "2.7"
   }
 }

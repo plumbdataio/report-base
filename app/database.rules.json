@@ -1,0 +1,52 @@
+// DO NOT EDIT RULES IN CONSOLE !!!!
+// INSTEAD, EDIT THE FILE IN GIT-REPO AND DEPLOY IT TO FIREBASE
+
+{
+  "rules": {
+    "version": {
+      ".read": "true"
+    },
+    "status": {
+      ".read": "auth.token.role === 'admin'",
+      ".write": "auth != null"
+    },
+    "staff": {
+      ".read": "auth.token.role === 'admin'",
+      ".write": "auth.token.role === 'admin'",
+      ".indexOn": ["affiliation", "staffId"],
+      "$staffId": {
+        ".read": "auth != null && $staffId+'' == auth.uid",
+        ".write": "auth.token.role === 'admin'"
+      }
+    },
+		"staffConfidential" : {
+      ".read": "auth.token.role === 'admin' && auth.token.isAccountant === true",
+      ".write": "auth.token.role === 'admin' && auth.token.isAccountant === true",
+      ".indexOn": ["staffId"]
+    },
+    "report": {
+      "$affilation": {
+        ".read": "auth != null",
+        ".write": "auth.token.role ==='admin'",
+        ".indexOn": ["staffIdWithDate", "date", "affiliation", "staffId"],
+        "$reportId" : {
+
+          // The expression "val()+''" below is not a mistake but to turn number to string...
+          ".write": "(auth != null && newData.exists()) || auth.uid == data.child('staffId').val()+'' ",
+        }
+      }
+    },
+    "project": {
+      ".read": "auth != null",
+      ".write": "auth.token.role === 'admin'",
+      ".indexOn": ["projectId", "status"]
+    },
+    "contact": {
+      ".read": "auth != null",
+      ".write": "false"
+    },
+    "maintenance": {
+      ".read": "true"
+    }
+  }
+}

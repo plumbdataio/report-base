@@ -1,9 +1,17 @@
 [build]
-functions = "src"
-functionsSource = "src"
+base = "/functions"
+publish = "./dist"
+
+[functions]
+directory = "src"
+node_bundler = "esbuild"
+
+# [[plugins]]
+# package = "./plugin/plugin-load-customer-info"
 
 [context.dev.environment]
   AWS_LAMBDA_JS_RUNTIME = "nodejs18.x"
+  IS_LOCAL = "true"
 
 [[headers]]
   for = "/*"

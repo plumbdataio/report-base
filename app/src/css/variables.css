@@ -1,0 +1,52 @@
+:root {
+  /** CONSTS */
+  --sidebar-width: 180px;
+
+  /** COLORS */
+  --pure-white-args: 255, 255, 255;
+  --pure-white: rgb(var(--pure-white-args));
+  --pale-gray-args: 205, 205, 205;
+  --pale-gray: rgb(var(--pale-gray-args));
+  --light-gray-args: 224, 224, 224;
+  --light-gray: rgb(var(--light-gray-args));
+  --dark-gray-args: 160, 160, 160;
+  --dark-gray: rgb(var(--dark-gray-args));
+  --sumi-black-args: 33, 40, 40;
+  --sumi-black: rgb(var(--sumi-black-args));
+  --light-blue1-args: 137, 176, 253;
+  --light-blue1: rgb(var(--light-blue1-args));
+  --light-blue2-args: 79, 136, 250;
+  --light-blue2: rgb(var(--light-blue2-args));
+  --dark-blue1-args: 48, 65, 86;
+  --dark-blue1: rgb(var(--dark-blue1-args));
+  --dark-blue2-args: 18, 36, 56;
+  --dark-blue2: rgb(var(--dark-blue2-args));
+  --light-green1-args: 123, 250, 184;
+  --light-green1: rgb(var(--light-green1-args));
+  --light-green2-args: 78, 225, 149;
+  --light-green2: rgb(var(--light-green2-args));
+  --dark-green1-args: 109, 196, 151;
+  --dark-green1: rgb(var(--dark-green1-args));
+  --dark-green2-args: 46, 175, 108;
+  --dark-green2: rgb(var(--dark-green2-args));
+  --light-yellow1-args: 255, 236, 127;
+  --light-yellow1: rgb(var(--light-yellow1-args));
+  --light-yellow2-args: 255, 224, 49;
+  --light-yellow2: rgb(var(--light-yellow2-args));
+  --light-red1-args: 255, 127, 140;
+  --light-red1: rgb(var(--light-red1-args));
+  --light-red2-args: 229, 90, 104;
+  --light-red2: rgb(var(--light-red2-args));
+
+  /** Palette 1 */
+  --royal-blue-traditional-args: 39, 42, 105;
+  --royal-blue-traditional: rgb(var(--royal-blue-traditional-args));
+  --denim-args: 56, 93, 172;
+  --denim: rgb(var(--denim-args));
+  --magnolia-args: 232, 230, 255;
+  --magnolia: rgb(var(--magnolia-args));
+  --pale-azure-args: 132, 216, 255;
+  --pale-azure: rgb(var(--pale-azure-args));
+  --cyclamen-args: 252, 112, 156;
+  --cyclamen: rgb(var(--cyclamen-args));
+}

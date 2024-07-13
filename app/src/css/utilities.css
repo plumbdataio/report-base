@@ -1,0 +1,38 @@
+.error-message {
+  color: var(--danger);
+  font-size: 0.75em;
+  font-weight: bold;
+}
+.warning-message {
+  color: var(--warning);
+  font-size: 0.75em;
+  font-weight: bold;
+}
+.button-plus:after {
+  content: "＋";
+}
+.button-minus:after {
+  content: "－";
+}
+
+.gap-10 { gap: 10px; }
+.gap-20 { gap: 20px; }
+.gap-30 { gap: 30px; }
+.gap-40 { gap: 40px; }
+.gap-50 { gap: 50px; }
+.gap-60 { gap: 60px; }
+.gap-70 { gap: 70px; }
+.gap-80 { gap: 80px; }
+.gap-90 { gap: 90px; }
+.gap-100 { gap: 100px; }
+
+.row-gap-10 { row-gap: 10px; }
+.row-gap-20 { row-gap: 20px; }
+.row-gap-30 { row-gap: 30px; }
+.row-gap-40 { row-gap: 40px; }
+.row-gap-50 { row-gap: 50px; }
+.row-gap-60 { row-gap: 60px; }
+.row-gap-70 { row-gap: 70px; }
+.row-gap-80 { row-gap: 80px; }
+.row-gap-90 { row-gap: 90px; }
+.row-gap-100 { row-gap: 100px; }

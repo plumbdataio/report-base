@@ -1,0 +1,27 @@
+{
+  // プロジェクトに合わせて変更してください
+  "include": ["src/**/*", "test/**/*"],
+  "files": ["./process.env.d.ts"],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [ "src/*" ]
+    },
+    "types": ["vitest/globals"],
+    "strict": true,
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "resolveJsonModule": true,
+    "emitDeclarationOnly": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "vueCompilerOptions": {
+    "target": 2.7
+  }
+}

@@ -1,0 +1,272 @@
+* {
+  font-family: 'Noto Sans JP', 'Meiryo', 'Hiragino Sans';
+}
+
+:root {
+  --base-args: var(--dark-blue1-args);
+  --base: rgb(var(--base-args));
+  --primary-args: var(--royal-blue-traditional-args);
+  --primary: rgb(var(--primary-args));
+  --secondary-args: var(--denim-args);
+  --secondary: rgb(var(--secondary-args));
+  --success-args: var(--light-green1-args);
+  --success: rgb(var(--success-args));
+  --info-args: var(--magnolia-args);
+  --info: rgb(var(--info-args));
+  --warning-args: var(--pale-azure-args);
+  --warning: rgb(var(--warning-args));
+  --danger-args: var(--cyclamen-args);
+  --danger: rgb(var(--danger-args));
+
+  /* --base: var(--royal-blue-traditional);
+  --primary: var(--denim);
+  --secondary: var(--dark-gray);
+  --success: var(--light-green1);
+  --info: var(--magnolia);
+  --warning: var(--pale-azure);
+  --danger: var(--cyclamen); */
+}
+
+.firebaseui-button {
+  background-color: var(--secondary);
+}
+
+.firebaseui-container {
+  background-color: var(--base);
+  text-wrap: nowrap;
+
+  .firebaseui-title, .firebaseui-textfield *, .firebaseui-new-password-component * {
+    color: var(--pure-white);
+  }
+
+  .mdl-textfield__input {
+    border-bottom: 1px solid var(--light-gray);
+  }
+
+  .firebaseui-button {
+    background-color: var(--primary);
+    color: var(--pure-white);
+  }
+}
+
+.theme-text-sideA-1 {
+  color: var(--pure-white);
+}
+
+.theme-login {
+  background-color: var(--base);
+}
+
+.theme-sidebar-header {
+  width: var(--sidebar-width);
+}
+tr td {
+  vertical-align: middle;
+}
+.theme-sidebar,
+.theme-sidebar-header > .b-sidebar-header,
+.theme-sidebar-item {
+  font-weight: 200;
+  background-color: var(--base);
+}
+.theme-sidebar-header * {
+  color: var(--pure-white);
+}
+.theme-sidebar-logo {
+  filter: brightness(0.98);
+}
+.theme-sidebar-item {
+  color: var(--info);
+}
+.theme-sidebar-item-active {
+  color: var(--warning);
+  background-color: var(--primary);
+  font-weight: 600;
+}
+.theme-sidebar-footer {
+  color: var(--dark-gray);
+  font-weight: 100;
+}
+
+.theme-thead-color1 th {
+  background-color: var(--base);
+  color: var(--pure-white);
+}
+.theme-thead-color2 > th {
+  background-color: var(--pale-gray);
+  color: var(--dark-blue2);
+}
+
+/*********************************************************
+  Items below are for the bootstrap-vue element stylying
+ *********************************************************/
+:root {
+  --bs-focus-ring-color: var(--danger);
+}
+/* Buttons */
+.btn-primary, .card-primary, .bg-primary, .bg-primary>.card-body {
+  background-color: var(--primary) !important;
+  /* color:  */
+  border: 0px;
+}
+.tooltip.b-tooltip-primary {
+  *.tooltip-inner {
+    background-color: var(--primary) !important;
+    border: 0px;
+  }
+  *.arrow::before {
+    border-bottom-color: var(--primary);
+  }
+}
+.btn-outline-primary, .card-outline-primary {
+  background-color: var(--transparent) !important;
+  color: var(--secondary);
+  font-weight: 500;
+  border: 1px solid var(--primary);
+}
+
+.btn-secondary, .card-secondary, .bg-secondary>.card-body {
+  background-color: var(--secondary) !important;
+  /* color:  */
+  border: 0px;
+}
+.tooltip.b-tooltip-secondary {
+  *.tooltip-inner {
+    background-color: var(--secondary) !important;
+    border: 0px;
+  }
+  *.arrow::before {
+    border-bottom-color: var(--secondary);
+  }
+}
+.btn-outline-secondary, .card-outline-secondary {
+  background-color: var(--transparent) !important;
+  color: var(--secondary);
+  font-weight: 500;
+  border: 1px solid var(--secondary);
+}
+
+.btn-success, .card-success, .bg-success>.card-body {
+  background-color: var(--success) !important;
+  color: var(--sumi-black);
+  border: 0px;
+}
+.tooltip.b-tooltip-success {
+  *.tooltip-inner {
+    background-color: var(--success) !important;
+    border: 0px;
+  }
+  *.arrow::before {
+    border-bottom-color: var(--success);
+  }
+}
+.btn-outline-success, .card-outline-success {
+  background-color: var(--transparent) !important;
+  color: var(--success);
+  font-weight: 500;
+  border: 1px solid var(--success);
+}
+
+.btn-info, .card-info, .bg-info>.card-body {
+  background-color: var(--info) !important;
+  color: var(--sumi-black);
+  border: 0px;
+}
+.tooltip.b-tooltip-info {
+  *.tooltip-inner {
+    background-color: var(--info) !important;
+    border: 0px;
+  }
+  *.arrow::before {
+    border-bottom-color: var(--info);
+  }
+}
+.btn-outline-info, .card-outline-info {
+  background-color: var(--transparent) !important;
+  color: var(--info);
+  font-weight: 500;
+  border: 1px solid var(--info);
+}
+
+.btn-warning, .card-warning, .bg-warning>.card-body {
+  background-color: var(--warning) !important;
+  color: var(--sumi-black);
+  border: 0px;
+}
+.tooltip.b-tooltip-warning {
+  *.tooltip-inner {
+    background-color: var(--warning) !important;
+    border: 0px;
+  }
+  *.arrow::before {
+    border-bottom-color: var(--warning);
+  }
+}
+.btn-outline-warning, .card-outline-warning {
+  background-color: var(--transparent) !important;
+  color: var(--warning);
+  font-weight: 500;
+  border: 1px solid var(--warning);
+}
+
+.btn-danger, .card-danger, .bg-danger>.card-body {
+  background-color: var(--danger) !important;
+  /* color:  */
+  border: 0px;
+}
+.tooltip.b-tooltip-danger {
+  *.tooltip-inner {
+    background-color: var(--danger) !important;
+    border: 0px;
+  }
+  *.arrow::before {
+    border-bottom-color: var(--danger);
+  }
+}
+.btn-outline-danger, .card-outline-danger {
+  background-color: var(--transparent) !important;
+  color: var(--danger);
+  font-weight: 500;
+  border: 1px solid var(--danger);
+}
+
+/* Radio & Checkbox switch */
+.custom-control-input:checked~.custom-control-label:before {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+.custom-radio.b-custom-control-lg .custom-control-label:after, .input-group-lg .custom-radio .custom-control-label:after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%2712%27 viewBox=%27-4 -4 8 8%27%3e%3ccircle r=%273%27 fill=%27%23fff%27/%3e%3c/svg%3e");
+}
+
+.tooltip-inner>.card {
+  border: 0px;
+}
+
+.b-tooltip.tooltip {
+  opacity: 1;
+}
+/****************
+  HERE IS A HACK:
+  b-spinner's color cannot be overriden with the same class name,
+  so I use postcss plugin called "postcss-remove-declaration" to eliminate "text-xxxx" from css.
+  That's why you need to put "span" in front of the "text-xxxx" class name below:
+*****************/
+span.text-primary {
+  color: var(--primary);
+}
+span.text-secondary {
+  color: var(--secondary);
+}
+span.text-success {
+  color: var(--success);
+}
+span.text-info {
+  color: var(--info);
+}
+span.text-warning {
+  color: var(--warning);
+}
+span.text-danger {
+  color: var(--danger);
+}
